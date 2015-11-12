@@ -1,17 +1,10 @@
-﻿//
-//  GameMainScene.cpp
-//  example12-1
-//
-//  Created by shuoquan man on 12-10-21.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
-//
-
-#include "GameMainScene.h"
+﻿#include "GameMainScene.h"
 #include "GameMenuScene.h"
 #include "GameObjMap.h"
 #include "GameConst.h"
 #include "GameObjStar.h"
-using namespace cocos2d;
+
+USING_NS_CC;
 
 Scene* GameMain::scene()
 {
