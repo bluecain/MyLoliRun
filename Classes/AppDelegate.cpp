@@ -1,4 +1,5 @@
 #include "AppDelegate.h"
+#include "MyUtility.h"
 #include "HelloWorldScene.h"
 
 USING_NS_CC;
@@ -34,12 +35,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLViewImpl::create("My Game");
+		glview = GLViewImpl::create(MyUtility::gbk_2_utf8("ΕάΏα"));
         director->setOpenGLView(glview);
     }
 
     // turn on display FPS
-    director->setDisplayStats(true);
+    director->setDisplayStats(false);
 
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
