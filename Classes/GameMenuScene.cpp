@@ -1,4 +1,12 @@
-﻿#include "GameMenuScene.h"
+﻿//
+//  GameMenuScene.cpp
+//  example12-1
+//
+//  Created by shuoquan man on 12-10-13.
+//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+//
+
+#include "GameMenuScene.h"
 #include "GameMainScene.h"
 #include "GameAboutScene.h"
 #include "SimpleAudioEngine.h"
@@ -6,12 +14,11 @@
 using namespace cocos2d;
 using namespace CocosDenshion;
 
-GameMenu::GameMenu()
-{
+GameMenu::GameMenu(){
+    
 }
-
-GameMenu::~GameMenu()
-{   
+GameMenu::~GameMenu(){
+    
 }
 
 Scene* GameMenu::scene()
@@ -22,7 +29,6 @@ Scene* GameMenu::scene()
     
     return scene;
 }
-
 bool GameMenu::init()
 {
     if(!Layer::init())
